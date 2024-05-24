@@ -238,7 +238,7 @@ def display_prompt(df_chunk):
 
 # Configure Generative AI
 genai.configure(api_key='AIzaSyChrZHlPjSkDh1MQcHrODIqUAo5_cpfM6U')
-
+0
 # Initialize Generative Model
 model_name = "gemini-pro"
 model = genai.GenerativeModel(model_name)
