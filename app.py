@@ -10,13 +10,12 @@ if __name__ == "__main__":
 
 import subprocess
 
-def install_package(package):
-    subprocess.check_call(["pip", "install", package])
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# Example usage:
-if __name__ == "__main__":
-    package_name = "spacy"
-    install_package(package_name)
+# Install SpaCy
+install("spacy")
+
 import streamlit as st
 import spacy
 from collections import defaultdict, Counter
