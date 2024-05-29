@@ -1,5 +1,22 @@
-pip install streamlit
-pip install spacy
+import subprocess
+
+def install_package(package):
+    subprocess.check_call(["pip", "install", package])
+
+# Example usage:
+if __name__ == "__main__":
+    package_name = "streamlit"
+    install_package(package_name)
+
+import subprocess
+
+def install_package(package):
+    subprocess.check_call(["pip", "install", package])
+
+# Example usage:
+if __name__ == "__main__":
+    package_name = "spacy"
+    install_package(package_name)
 import streamlit as st
 import spacy
 from collections import defaultdict, Counter
