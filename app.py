@@ -1,5 +1,5 @@
-! pip install streamlit
-! pip install spacy
+pip install streamlit
+pip install spacy
 import streamlit as st
 import spacy
 from collections import defaultdict, Counter
